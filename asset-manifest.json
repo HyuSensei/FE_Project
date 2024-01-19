@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/FE_Project/static/css/main.98879f33.css",
+    "main.js": "/FE_Project/static/js/main.fe2b8072.js",
+    "static/js/787.498e3191.chunk.js": "/FE_Project/static/js/787.498e3191.chunk.js",
+    "static/media/banner3.png": "/FE_Project/static/media/banner3.a25e91801e939ff1435e.png",
+    "static/media/banner2.png": "/FE_Project/static/media/banner2.22dd32991ef05206a58d.png",
+    "static/media/banner1.png": "/FE_Project/static/media/banner1.b769ddf31bd8b6e3d6bf.png",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/FE_Project/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/bootstrap-icons.woff?": "/FE_Project/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/fontawesome-webfont.eot": "/FE_Project/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/FE_Project/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/bootstrap-icons.woff2?": "/FE_Project/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/FE_Project/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/FE_Project/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/logoskinlele.PNG": "/FE_Project/static/media/logoskinlele.0551e8801d5fc56bb8ca.PNG",
+    "index.html": "/FE_Project/index.html",
+    "main.98879f33.css.map": "/FE_Project/static/css/main.98879f33.css.map",
+    "main.fe2b8072.js.map": "/FE_Project/static/js/main.fe2b8072.js.map",
+    "787.498e3191.chunk.js.map": "/FE_Project/static/js/787.498e3191.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98879f33.css",
+    "static/js/main.fe2b8072.js"
+  ]
+}
