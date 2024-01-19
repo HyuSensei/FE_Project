@@ -51,7 +51,7 @@ export const authLogin = createAsyncThunk("auth/authLogin", async () => {
     const res = await axios.get(URL_API + `/authentication`, {
       withCredentials: true,
     });
-    return res.data;
+    return await res.data;
   } catch (error) {
     console.log(error);
     return error.response.data;
