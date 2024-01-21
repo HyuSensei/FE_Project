@@ -58,6 +58,22 @@ export const authLogin = createAsyncThunk("auth/authLogin", async () => {
   }
 });
 
+export const authLoginToken = createAsyncThunk(
+  "auth/authLoginToken",
+  async () => {
+    try {
+      const token = localStorage.getItem("jwt");
+      const res = await axios.get(URL_API + `/authentication/${token}`, {
+        withCredentials: true,
+      });
+      return await res.data;
+    } catch (error) {
+      console.log(error);
+      return error.response.data;
+    }
+  }
+);
+
 export const logout = createAsyncThunk("auth/logout", async () => {
   try {
     const res = await axios.get(URL_API + `/logout`, {
@@ -107,8 +123,19 @@ export const authSilce = createSlice({
         state.isLoadingLogin = false;
         state.isSuccessLogin = null;
       })
-
+      // Auth
       .addCase(authLogin.fulfilled, (state, action) => {
+        if (action.payload.detail) {
+          state.isAuthError = action.payload;
+          state.isAuthSucess = null;
+        } else {
+          state.isAuthSucess = action.payload;
+          state.dataUser = action.payload.user;
+          state.isAuthError = null;
+        }
+      })
+      // Auth Token
+      .addCase(authLoginToken.fulfilled, (state, action) => {
         if (action.payload.detail) {
           state.isAuthError = action.payload;
           state.isAuthSucess = null;

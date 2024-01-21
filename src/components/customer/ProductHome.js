@@ -32,8 +32,7 @@ const ProductHome = () => {
       </h3>
       <div className="row">
         {listProduct &&
-          listProduct.length &&
-          listProduct.map((item, index) => {
+          listProduct.length > 0 ? (listProduct.map((item, index) => {
             return (
               <div
                 key={`product-${index}`}
@@ -72,7 +71,12 @@ const ProductHome = () => {
                 </div>
               </div>
             );
-          })}
+          })) : (
+          <div style={{ textAlign: 'center' }}>
+            <h4>LOADING...</h4>
+          </div>
+        )
+        }
       </div>
     </div>
   );
